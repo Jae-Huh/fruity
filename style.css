@@ -21,8 +21,19 @@ body {
 }
 
 #basket {
-  height: 230px;
-  margin: 0 70px;
+  height: 30vh;
+  width: 80%;
+  margin-left: 25%;
+  position: relative;
+}
+
+#fruit-count {
+  position: absolute;
+  bottom: 5%;
+  left: 11%;
+  color: #ffffff;
+  font-size: 5em;
+  margin: 0;
 }
 
 #tree {
@@ -32,19 +43,39 @@ body {
   position: relative;
 }
 
-#apple {
-  height: 100px;
+.apple {
+  height:17vh;
   position: absolute;
-  left: 50%;
-  top: 300px;
+}
+
+#apple1 {
+  left: 55%;
+  top: 17%;
+}
+
+#apple2 {
+  left: 35%;
+  top: 40%;
+}
+
+#apple3 {
+  left: 40%;
+  top: 20%;
+}
+
+#apple4 {
+  left: 55%;
+  top: 48%;
 }
 
 #watering-can {
-  height: 170px;
+  height: 20vh;
+  width: 90%;
 }
 
 #watering-can:hover {
-  height: 200px;
+  height: 25vh;
+  width: 100%;
   position: relative;
   right: 15px;
 }
