@@ -44,7 +44,8 @@ body {
 }
 
 .apple {
-  height:17vh;
+  /*height: 17vh;*/
+  height: 0vh;
   position: absolute;
 }
 
@@ -73,7 +74,7 @@ body {
   width: 90%;
 }
 
-#watering-can:hover {
+#watering-can:active {
   height: 25vh;
   width: 100%;
   position: relative;
