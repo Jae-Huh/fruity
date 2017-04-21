@@ -16,7 +16,7 @@ water.addEventListener('click', function() {
   if (randomNumber === 0) {
     if (apple1height === 18) {
       apple[0].style.height = '18vh'
-      apple[0].style.backgroundColor = 'black'
+      apple[0].setAttribute('src', 'images/apple-rotten.png')
     } else {
       apple1height += 3
       apple[0].style.height = apple1height + 'vh'
@@ -24,7 +24,7 @@ water.addEventListener('click', function() {
   } else if (randomNumber === 1) {
     if (apple2height === 18) {
       apple[1].style.height = '18vh'
-      apple[1].style.backgroundColor = 'black'
+      apple[1].setAttribute('src', 'images/apple-rotten.png')
     } else {
       apple2height += 3
       apple[1].style.height = apple2height + 'vh'
@@ -32,7 +32,7 @@ water.addEventListener('click', function() {
   } else if (randomNumber === 2) {
     if (apple3height === 18) {
       apple[2].style.height = '18vh'
-      apple[2].style.backgroundColor = 'black'
+      apple[2].setAttribute('src', 'images/apple-rotten.png')
     } else {
       apple3height += 3
       apple[2].style.height = apple3height + 'vh'
@@ -40,7 +40,7 @@ water.addEventListener('click', function() {
   } else if (randomNumber === 3) {
     if (apple4height === 18) {
       apple[3].style.height = '18vh'
-      apple[3].style.backgroundColor = 'black'
+      apple[3].setAttribute('src', 'images/apple-rotten.png')
     } else {
       apple4height += 3
       apple[3].style.height = apple4height + 'vh'
