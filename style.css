@@ -2,7 +2,16 @@ body {
   background-color: #FFEBD3;
   height: 100vh;
   margin: 0px;
+  font-family: fantasy;
 }
+
+.instruction {
+  position: absolute;
+  left: 20px;
+  z-index: 1;
+  width: 40%;
+}
+
 
 .left {
   display: inline-block;
@@ -29,15 +38,15 @@ body {
 
 #score {
   position: absolute;
-  bottom: 15%;
-  left: 8.5%;
+  bottom: 12%;
+  left: 8%;
   font-size: 3em;
 }
 
 #scoreNum {
   position: absolute;
-  bottom: 5%;
-  left: 11%;
+  bottom: 1%;
+  left: 10.5%;
   color: #ffffff;
   font-size: 5em;
   margin: 0;

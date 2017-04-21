@@ -1,8 +1,6 @@
 var apple = document.getElementsByClassName('apple')
 var appleDiv = document.getElementById('apple-container')
 
-// var fruitCounter = document.getElementById('fruit-count')
-// var fruitCount = 0
 var scoreNum = document.getElementById('scoreNum')
 var score = 0
 
