@@ -66,25 +66,25 @@ appleDiv.addEventListener('click', function(event) {
 function pickApple(el) {
   el.parentNode.removeChild(el)
   if (el.style.height === '3vh') {
-    score += 0
-    scoreNum.innerHTML = score
-  } else if (el.style.height === '6vh') {
     score += 1
     scoreNum.innerHTML = score
-  } else if (el.style.height === '9vh') {
+  } else if (el.style.height === '6vh') {
     score += 2
     scoreNum.innerHTML = score
-  } else if (el.style.height === '12vh') {
+  } else if (el.style.height === '9vh') {
     score += 3
     scoreNum.innerHTML = score
-  } else if (el.style.height === '15vh') {
+  } else if (el.style.height === '12vh') {
     score += 4
+    scoreNum.innerHTML = score
+  } else if (el.style.height === '15vh') {
+    score += 5
     scoreNum.innerHTML = score
   } else if (el.getAttribute('src') === 'images/apple-rotten.png') {
     score -= 3
     scoreNum.innerHTML = score
   } else if (el.style.height === '18vh') {
-    score += 5
+    score += 6
     scoreNum.innerHTML = score
   }
 }
