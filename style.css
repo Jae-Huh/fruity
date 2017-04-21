@@ -27,7 +27,14 @@ body {
   position: relative;
 }
 
-#fruit-count {
+#score {
+  position: absolute;
+  bottom: 15%;
+  left: 8.5%;
+  font-size: 3em;
+}
+
+#scoreNum {
   position: absolute;
   bottom: 5%;
   left: 11%;
@@ -44,14 +51,13 @@ body {
 }
 
 .apple {
-  /*height: 17vh;*/
   height: 0vh;
   position: absolute;
 }
 
 #apple1 {
-  left: 55%;
-  top: 17%;
+  left: 52%;
+  top: 10%;
 }
 
 #apple2 {
@@ -65,8 +71,13 @@ body {
 }
 
 #apple4 {
-  left: 55%;
+  left: 60%;
   top: 48%;
+}
+
+#apple5 {
+  left: 52%;
+  top: 35%;
 }
 
 #watering-can {
