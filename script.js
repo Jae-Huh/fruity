@@ -16,14 +16,15 @@ water.addEventListener('click', function() {
     }
   }
 
-  if (rottenAppleCount > 5) {
+  if (rottenAppleCount <= 5) {
+    var randomNumber = Math.floor(Math.random() * 5)
+    growApples(randomNumber)
+
+  } else {
     var confirmRestart = confirm('Game Over! Click "OK" to start the game again.')
     if (confirmRestart) {
       resetGame()
     }
-  } else {
-    var randomNumber = Math.floor(Math.random() * 5)
-    growApples(randomNumber)
   }
 })
 
