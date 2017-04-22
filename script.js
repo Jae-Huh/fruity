@@ -14,6 +14,14 @@ var apple5height = 0
 // Watering - makes apples grow but when watered too much, they rot
 water.addEventListener('click', function() {
   var randomNumber = Math.floor(Math.random() * 5)
+
+  // This could be refactored to reduce code.
+  // You could create a function that accepts the random number
+  // And applys the going / if statement to that number
+  // e.g.
+  // apple[randNum].setAttribute('src', 'images/apple-rotten.png')
+  // You also already have the hieght as
+  // apple[0].style.height, so instead fo storing it as a var you could just check that value
   if (randomNumber === 0) {
     if (apple1height === 18) {
       apple[0].style.height = '18vh'
@@ -65,6 +73,11 @@ appleDiv.addEventListener('click', function(event) {
 
 function pickApple(el) {
   el.parentNode.removeChild(el)
+  // You could refactor this as a switch statement which would make it less code.
+  // You also update the scoreNum.innerHTML in every if statement.
+  // Even though its the exact same code.
+  // So it could be do out of all the if statements, and just be done every time after
+  // the if state has been executed.
   if (el.style.height === '3vh') {
     score += 1
     scoreNum.innerHTML = score
