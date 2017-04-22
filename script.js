@@ -12,7 +12,7 @@ water.addEventListener('click', function() {
 })
 
 function growApples(randomNumber) {
-  if (!apple[randomNumber]) {
+  if (!apple[randomNumber] || apple[randomNumber].getAttribute('src') === 'images/apple-rotten.png') {
     return growApples(Math.floor(Math.random() * 5))
   }
   if (apple[randomNumber].style.height === '18vh') {
