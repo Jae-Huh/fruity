@@ -19,10 +19,10 @@ function growApples(randomNumber) {
     apple[randomNumber].setAttribute('src', 'images/apple-rotten.png')
   } else {
     if (!apple[randomNumber].style.height) {
-      apple[randomNumber].style.height = '3vh'
+      apple[randomNumber].style.height = '0vh'
     }
-    apple[randomNumber].style.height = parseInt(apple[randomNumber].style.height) + 3 + 'vh'
   }
+  apple[randomNumber].style.height = parseInt(apple[randomNumber].style.height) + 3 + 'vh'
 }
 
 
