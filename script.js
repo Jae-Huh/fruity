@@ -10,17 +10,16 @@ var rottenAppleCount = 0
 water.addEventListener('click', function() {
 
   for (var i = 0; i < apple.length; i++) {
-     if (apple[i].src !== 'file:///Users/JaeH/devacademy/fruity/images/apple.png') {
+     if (apple[i].getAttribute('src') !== 'images/apple.png') {
        rottenAppleCount += 1
      } else {
        rottenAppleCount = 0
      }
    }
 
-   if (rottenAppleCount <= 5) {
+   if (rottenAppleCount < 5) {
      var randomNumber = Math.floor(Math.random() * 5)
      growApples(randomNumber)
-
    } else {
      var confirmRestart = confirm('Game Over! Click "OK" to start the game again.')
      if (confirmRestart) {
@@ -28,8 +27,6 @@ water.addEventListener('click', function() {
      }
    }
 
-    // var randomNumber = Math.floor(Math.random() * 5)
-    // growApples(randomNumber)
 })
 
 function resetGame() {
@@ -64,7 +61,6 @@ appleDiv.addEventListener('click', function(event) {
 })
 
 function pickApple(el) {
-  // el.parentNode.removeChild(el)
   el.style.display = 'none'
   switch(el.style.height) {
     case '3vh':
