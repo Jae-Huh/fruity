@@ -43,10 +43,11 @@ function growApples(randomNumber) {
 }
 
 function resetGame() {
-  score = 0
   for (var i = 0; i < apple.length; i++) {
     apple[i].style.height = '0vh'
   }
+  score = 0
+  rottenAppleCount = 0
 }
 
 
