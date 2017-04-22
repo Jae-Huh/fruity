@@ -8,24 +8,8 @@ var rottenAppleCount = 0
 
 // Watering - makes apples grow but when watered too much, they rot
 water.addEventListener('click', function() {
-  for (var i = 0; i < apple.length; i++) {
-    if (apple[i].src !== 'file:///Users/JaeH/devacademy/fruity/images/apple.png') {
-      rottenAppleCount += 1
-    } else {
-      rottenAppleCount = 0
-    }
-  }
-
-  if (rottenAppleCount <= 5) {
     var randomNumber = Math.floor(Math.random() * 5)
     growApples(randomNumber)
-
-  } else {
-    var confirmRestart = confirm('Game Over! Click "OK" to start the game again.')
-    if (confirmRestart) {
-      resetGame()
-    }
-  }
 })
 
 function growApples(randomNumber) {
@@ -40,14 +24,6 @@ function growApples(randomNumber) {
     }
     apple[randomNumber].style.height = parseInt(apple[randomNumber].style.height) + 3 + 'vh'
   }
-}
-
-function resetGame() {
-  for (var i = 0; i < apple.length; i++) {
-    apple[i].style.height = '0vh'
-  }
-  score = 0
-  rottenAppleCount = 0
 }
 
 
