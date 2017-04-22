@@ -21,8 +21,8 @@ function growApples(randomNumber) {
     if (!apple[randomNumber].style.height) {
       apple[randomNumber].style.height = '0vh'
     }
+    apple[randomNumber].style.height = parseInt(apple[randomNumber].style.height) + 3 + 'vh'
   }
-  apple[randomNumber].style.height = parseInt(apple[randomNumber].style.height) + 3 + 'vh'
 }
 
 
